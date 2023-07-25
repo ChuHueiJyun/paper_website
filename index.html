@@ -39,10 +39,10 @@
                         <a href="#demo1">摘要</a>
                     </li>
 					<li>
-                        <a href="#demo2">引用文獻</a>
+                        <a href="#demo2">系統概要與生成結果</a>
                     </li>
                     <li>
-                        <a href="#demo3">示範</a>
+                        <a href="#demo3">簡介影片</a>
                     </li>
 					
                 </ul>
@@ -56,12 +56,12 @@
     <!-- Header -->
     <a name="top"></a>
     <div class="intro-header">
-        <div class="container" style="height:350px;">
-
+        <img class="img-responsive model1" src="img/model1.gif" alt="" >
+        <div class="container title" style="height:350px;">
             <div class="row">
                 <div class="col-lg-12" style="height:300px;">
                     <div class="intro-message" style="position: relative;padding-top: 0%;padding-bottom: 70%;">
-                        <h1>論文題目</h1>
+                        <h1>文字情緒嵌入觸發動畫人物動作</h1>
                         <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a href="demo.html" class="btn btn-default btn-lg"> 
@@ -72,8 +72,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <img class="img-responsive model2" src="img/model2.gif" alt="" >
         <!-- /.container -->
 
     </div>
@@ -88,12 +88,22 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">摘要 <img id="name" src="img/name.svg" width="100"></h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+					<h2 class="section-heading">摘要 </h2>
+                    <!-- <h2 class="section-heading">摘要 <img id="name" src="img/name.svg" width="100"></h2> -->
+					<p class="lead">
+                        本研究開發了兩個系統，將文字透過情緒嵌入方法得到文字情緒，並藉由文字情緒來控制 Live2D 模型動作。
+                        文字情緒分析在隨著網際網路的發展和普及下，已經廣泛運用於許多領域。近期由 OpenAI 推出的 ChatGPT 
+                        非常流行，除了聊天以外，也能夠運用於許多不同領域，然而 ChatGPT 的使用者介面呈現比較單調，會給人一種冰冷的感覺。
+                        另外，在故事書中，透過作者對劇情的推動及隨著文字內容的逐步變化，能夠使讀者的情緒也隨之起伏。
+                        本論文基於文字情緒分析技術，開發 ChatGPT 和故事書兩種系統，在 ChatGPT 模式中，
+                        將代表使用者的 Live2D 模型與使用者輸入的文字情緒結合，並將代表 ChatGPT 的 Live2D 模型與 ChatGPT 回復使用者內容情緒結合。
+                        在故事書模式中，可以將使用放入的故事檔案逐句朗讀，並使用 Live2D 模型表現出該句的文字情緒。
+                        本論文對採用的 Live2D 模型動作進行手動情緒分類，將所有動作歸類至閒置和五種情緒類別。
+                    </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <img class="img-responsive" src="img/process.png" alt="">
                 </div>
             </div>
 
@@ -111,12 +121,21 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">引用文獻</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+                    <h2 class="section-heading">系統概要與生成結果</h2>
+					<p class="lead">
+                        本論文提供兩種以 Web 開發的系統，使用者輸入文字的文字作為輸入，用於觸發 Live2D 人物模型動作。
+                        本研究將使用到的 Live2D 模型春（正裝）和 Live2D 模型春（休閒服）兩隻模型以直觀的方式進行動作分類，包含 Idle、Happy、Sad、Angry、Surprised 和 Fearful 類別。
+                        在 ChatGPT 模式中，使用者和 ChatGPT 都有一隻代表的模型，依照使用者先 ChatGPT 後的順序，播放完使用者的音檔後，
+                        ChatGPT 的回覆音檔會依照先後順序陸續播放，期間模型會根據每句句子的情緒更換出不同的情緒動作。
+                        在故事書模式中，我們提供可以讓使用者自行選擇故事內容來生成故事書，該模式中使用者可以清楚的找到當前正在播放的內容，
+                        且模型也會根據當前的文字情緒播放對應的動作。
+                    </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                    <video controls autoplay width="1080" class="img-responsive" src="img/ChatGPT mode.mp4"></video>
+                    <br><br><br>
+                    <video controls autoplay width="1080" class="img-responsive" src="img/Storybook mode.mp4"></video>
                 </div>
             </div>
 
@@ -134,12 +153,12 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">示範</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+					<h2 class="section-heading">簡介影片</h2>
+					<p class="lead">本研究之說明影片</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <video controls autoplay width="1080" class="img-responsive" src="img/介紹影片.mp4"></video>
                 </div>
             </div>
 
